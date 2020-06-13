@@ -11,6 +11,10 @@ $secondary-color: #ff642f;
   transition: all 0.5s ease-in-out;
 }
 
+@mixin margin-bottom-changer($value){
+  margin-bottom: $value;
+}
+
 @function set-text-color($color) {
   @if (lightness($color) > 40%) {
     @return #000;
